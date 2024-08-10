@@ -1,3 +1,5 @@
+//NORMAL OBJECT
+
 const circle = { //object literal syntax
     radius: 1,
     location: {
@@ -11,7 +13,7 @@ const circle = { //object literal syntax
 
 circle.draw();
 
-
+//FACTORY FUNCTION
 function createCirrcle (radius) {
     return { 
         radius,
@@ -26,11 +28,10 @@ const cirrcle = createCirrcle(2);
 
 //CONSTRUCTOR FUNCTION
 function Cirrcle(radius) {
-    console.log('this', this);
     this.radius = radius;
     this.draw = function () {
         console.log('draw');
     }
 }
 
-const another = Cirrcle(1);
+const another = new Cirrcle(1);
