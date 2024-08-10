@@ -10,3 +10,27 @@ const circle = { //object literal syntax
 };
 
 circle.draw();
+
+
+function createCirrcle (radius) {
+    return { 
+        radius,
+        draw: function() {
+            console.log('draw');
+        }
+    };
+}
+
+const cirrcle = createCirrcle(2);
+
+
+//CONSTRUCTOR FUNCTION
+function Cirrcle(radius) {
+    console.log('this', this);
+    this.radius = radius;
+    this.draw = function () {
+        console.log('draw');
+    }
+}
+
+const another = Cirrcle(1);
