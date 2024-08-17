@@ -7,7 +7,7 @@ const circle = { //object literal syntax
         y: 1
     },
     draw: function () {
-        console.log('draw');
+        console.log('draww');
     }
 };
 
