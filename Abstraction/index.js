@@ -8,7 +8,7 @@ function Cirrcle(radius) {
     }
     this.draw = function () {
         computeOptimumLocation();
-        console.log('draw');
+        console.log('draww');
     }
 }
 const circle1 = new Cirrcle(10);
